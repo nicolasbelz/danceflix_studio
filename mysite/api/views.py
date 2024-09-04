@@ -14,13 +14,13 @@ from api.utils import refreshUserVideos, log
 
 
 if os.getenv("PYTHONANYWHERE_DOMAIN"):
-    stripe.api_key = "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"
+    stripe.api_key = "testets"
 else:
-    stripe.api_key = "sk_test_51JEd1UA6dAUmWfXk9ssz2dHsdzqJTJpt4puGzMIam46JTSpBJXJBXbUz79SbXEetwpyInjLkThaB9yFBDu96mNLM00lpnG6sFQ"
+    stripe.api_key = "testtes"
 
 
 # YOUR_DOMAIN = "https://www.ictir-polska.com"
-YOUR_DOMAIN = "https://www.danceflix.pl"
+YOUR_DOMAIN = "https://testtest.pl"
 
 
 # Create your views here.
