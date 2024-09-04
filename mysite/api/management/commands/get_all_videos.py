@@ -10,9 +10,9 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
 
         client = vimeo.VimeoClient(
-            token='2437290a883d4224248f82951e7f7bb7',
-            key='683cdccab43b2737936dfd4970dda2cbc63e8ed8',
-            secret='przgGJWyod8Y7cC2UIrK+XGcyIe8EDzBuRyKZgyWyjE2lD3BR352ehUZnVOFcGY5V1C3H2LV1D+S0Nr2C+4HHl0/WvsKIXbt0GFnHR1opmt0CVqjke6rPRNrH59ijSbR'
+            token='testtest',
+            key='testtest',
+            secret='testtest'
         )
         response = client.get("/me/videos")
 
