@@ -310,7 +310,7 @@ class TestCheckout(TestCase):
         Customer.objects.create(
             user=self.my_user,
             phone="123123123",
-            stripe_customer_id="cus_LNbAfETA7jgceH"
+            stripe_customer_id="testtest"
         )
 
         response = self.client.post("/auth/login/", credentials)
@@ -325,7 +325,7 @@ class TestCheckout(TestCase):
         self.item = SubscriptionItem.objects.create(
             duration=Duration.objects.create(days=30, time="1 miesiac"),
             price=Price.objects.create(amount=20.0, currency="PLN"),
-            stripe_price_id="price_1KY6R4A6dAUmWfXkck7KWjYu"
+            stripe_price_id="tetstets"
         )
 
     def test_success(self):
