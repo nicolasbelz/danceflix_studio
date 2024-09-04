@@ -29,7 +29,7 @@ def sendEmail(email: str, error: str):
     msg = EmailMessage()
 
     msg['Subject'] = "Email"
-    msg['From'] = "visionapi.contact@gmail.com"
+    msg['From'] = "visionapitact@gmail.com"
     msg['To'] = email
 
     msg.set_content('This is a plain text email')
@@ -43,8 +43,8 @@ def sendEmail(email: str, error: str):
     </html>
     """, subtype='html')
 
-    with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
-        smtp.login("visionapi.contact@gmail.com", "d17062001")
+    with smtplib.SMTP_SSL('smtp.gl.com', 5) as smtp:
+        smtp.login("visiopi.co@gmail.com", "d1001")
         smtp.send_message(msg)
 
 
