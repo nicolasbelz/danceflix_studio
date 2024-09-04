@@ -202,9 +202,9 @@ class TestGetHomepageVideo(TestCase):
         self.get_url = reverse("get-homepage-video")
 
         self.video = Video.objects.create(
-            resource_key="f9ac31292fe350af4e59724dbc2b0af7e7da420d",
+            resource_key="testtest",
             name="Lekcja 1",
-            embed="https://player.vimeo.com/video/690538789?h=c39426fbcc",
+            embed="https://player.vimeo.com/video/gsh?h=c39426fbcc",
             free=True,
             index=1
         )
